@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <children>
+      <GridPane layoutX="500.0" layoutY="6.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnLogin" text="Login" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="100.0" layoutY="364.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <TableView fx:id="movies" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="350.0">
+        <columns>
+          <TableColumn fx:id="movieName" prefWidth="127.0" text=" Movie" />
+          <TableColumn fx:id="movieDes" prefWidth="219.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button layoutX="163.0" layoutY="325.0" mnemonicParsing="false" onAction="#btnBooking" text="Book" />
+      <TextField fx:id="nameInput" layoutX="467.0" layoutY="81.0" prefHeight="39.0" prefWidth="127.0" />
+      <TextField fx:id="emailInput" layoutX="467.0" layoutY="134.0" prefHeight="39.0" prefWidth="127.0" />
+      <TextField fx:id="telInput" layoutX="467.0" layoutY="192.0" prefHeight="39.0" prefWidth="127.0" />
+      <ChoiceBox fx:id="selectTime" layoutX="467.0" layoutY="255.0" prefHeight="39.0" prefWidth="127.0" />
+      <Label layoutX="396.0" layoutY="87.0" text="Name" />
+      <Label layoutX="396.0" layoutY="140.0" prefHeight="27.0" prefWidth="48.0" text=" email" />
+      <Label layoutX="378.0" layoutY="198.0" text="Telephone" />
+      <Label layoutX="396.0" layoutY="261.0" text="Time" />
+   </children>
+</Pane>
